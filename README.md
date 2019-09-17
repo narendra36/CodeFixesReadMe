@@ -17,7 +17,7 @@ Readme only file with code, OS, app, etc. related fixes
         0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
       curl: (35) error:1400410B:SSL routines:CONNECT_CR_SRVR_HELLO:wrong version number
       Error: Failed to download resource "ghostscript"
-   --solution: step 1
-     $ git config --global http.proxy http://proxyout.lanl.gov:8080
-   --solution: step 2
-     $ export HOMEBREW_CURLRC=1 [later put into .bash_custom]
+   --solution: step 1__
+     $ git config --global http.proxy http://proxyout.lanl.gov:8080__
+   --solution: step 2__
+     $ export HOMEBREW_CURLRC=1 [later put into .bashrc]__
