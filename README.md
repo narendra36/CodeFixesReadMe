@@ -2,8 +2,8 @@
 Readme only file with code, OS, app, etc. related fixes
 
 2019 Sep 16  
--Application fix for brew/curl  
-   --the error ::  
+### Application fix for brew/curl  
+   #### the error ::  
 
       Mac: ~ $ brew cask install -v mactex
       Updating Homebrew...
@@ -18,7 +18,12 @@ Readme only file with code, OS, app, etc. related fixes
       curl: (35) error:1400410B:SSL routines:CONNECT_CR_SRVR_HELLO:wrong version number
       Error: Failed to download resource "ghostscript"
    
-   --solution: step 1  
-     \$ git config --global http.proxy http://proxyout.lanl.gov:8080  
-   --solution: step 2  
-     \$ export HOMEBREW_CURLRC=1 [later put into .bashrc]
+### Solution: 
+#### Step 1 
+   ```
+    $ git config --global http.proxy http://proxyout.lanl.gov:8080  
+   ```
+#### Step 2  
+   ```
+     $ export HOMEBREW_CURLRC=1 [later put into .bashrc]
+   ```
